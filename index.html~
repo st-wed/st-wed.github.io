@@ -3,7 +3,8 @@ layout: default
 title: Wedding!
 ---
 <div class="blurb">
-Samantha and Toru's Wedding!
-===========================
-	<p> Welcome to our wedding site!</p>
+
+	<h1>Samantha and Toru's Wedding!</h1>
+	<p> We're getting MARRIED! OMG OMG OMG</p>
+	<img src="/photos/military_ball.jpg"><br />
 </div><!-- /.blurb -->

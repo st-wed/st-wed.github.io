@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>{{ page.test }}</title>
+			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
-		<body>
+		<body style="margin:auto auto">
 			<!-- <img src="/images/logo.png" />-->
 			<nav>
 	    		<ul>
