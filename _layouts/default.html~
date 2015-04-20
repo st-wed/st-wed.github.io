@@ -8,11 +8,10 @@
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="/">Welcome</a></li>
-		        	<li><a href="/about">Our Story</a></li>
-	        		<li><a href="/location">About Location</a></li>
-	        		<li><a href="/rsvp">RSVP and Guest Book</a></li>
-				<li><a href="/photos">Photos</a></li>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
@@ -23,7 +22,9 @@
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:christopherkodama@gmail.com">email</a></li>
-	        	</ul>
+	        		<li><a href="https://ckhordiasma.github.io">github.com/ckhordiasma</a></li>
+
+				</ul>
 			</footer>
 		</body>
 	</html>
