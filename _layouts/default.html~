@@ -9,7 +9,7 @@
 			<!-- <img src="/images/logo.png" />-->
 			<nav>
 	    		<ul>
-	        		<li><a href="/sk_tk_wed">Welcome</a></li>
+	        		<li><a href="/">Welcome</a></li>
 		        	<li><a href="about">Our Story</a></li>
 	        		<li><a href="location">Location</a></li>
 	        		<li><a href="rsvp">RSVP</a></li>
