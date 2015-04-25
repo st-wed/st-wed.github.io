@@ -88,34 +88,66 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+#rsvp-form label{
+    display:block;
+    text-align: left;
+    margin-top:15px;
+}
+#rsvp-form input {
+    border: 1px solid #D4D4D4;
+    box-shadow: none;
+    padding: 13px 10px;
+    word-break: normal;
+    font: inherit;
+    color: #696868;
+    width:100%;
+    
+}
+#rsvp-form fieldset {
+    border:none;
+    width:75%;
+    margin:auto;
+}
+#rsvp-container{
+    margin:auto;
+    width:75%;
+}
 
-@font-face {
-  font-family: 'Nixie One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Nixie One'), local('NixieOne-Regular'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+#rsvp-form #rsvp-send{
+    background-color:#3498db;
+    color:white;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 7px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: medium none;
+    cursor: pointer;
+    width: 260px;
+    text-align: center;
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+
+#rsvp-form input[type='radio']:not(old){
+ /* Hide the input, but have it still be clickable */
+    width   : 28px;
+    margin  : 0;
+    padding : 0;
+    opacity : 0;
 }
-@font-face {
-  font-family: 'Nixie One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Nixie One'), local('NixieOne-Regular'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+
+#rsvp-form input[type='radio']:not(old) + label{
+  display      : inline-block;
+  margin-left  : -28px;
+  padding-left : 28px;
+  background   : url('/images/checks.png') no-repeat 0 0;
+  line-height  : 24px;
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+
+#rsvp-form input[type='radio']:not(old):checked + label{
+    background-position : 0 -48px;
 }
-@font-face {
-  font-family: 'Open Sans B';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+#rsvp-form .yes-no{
+display:inline;margin:auto 20px;
 }
