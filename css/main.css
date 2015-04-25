@@ -1,23 +1,61 @@
+/* COLOR SCHEME
+dark blue #2c3e50
+yellowish #e7cc26
+whitey #ecf0f1
+bright blue #3498db
+less bright blue #2980b9 
+*/
+
 body {
     margin: 60px auto;
-    width: 60%;
-text-align:center;
-    background: #414142 url('/images/background.png');
-    /**background-color: #414142;**/
-    color: #d4d5d6;
+    width: 100%;
+    text-align:center;
+    color: white;
+	line-height:1.4;
+	font-size:16px;
+	background-color:#ecf0f1;
+
+}
+
+#front-page-images{
+	width:60%;
+	margin: auto;
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:"Open Sans";
     padding: 0px;
     list-style: none;
     font-weight: bold;
+
+}
+nav {
+    background-color:#3498db;
+}
+
+nav ul li {
+	display: inline-block;
+	position:relative;
+	border-left: 1px solid #2980B9;
 }
 
 nav ul li a{
-    color:#74a8a2;
+    color:white;
+	padding: 18px 20px;
+	display:block;
 }
-nav ul li, footer ul li {
+
+nav ul li:first-child{
+	padding-left:0px;
+	border-left: medium none;
+}
+
+nav ul{
+    text-transform: uppercase;
+    vertical-align: baseline;
+	list-style: outside none none;
+}
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
@@ -35,7 +73,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #dee0e1;
+   
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -49,4 +87,35 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans B';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
