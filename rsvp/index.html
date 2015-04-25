@@ -45,11 +45,13 @@ title: Wedding!
     function postToGoogle() {
         var firstName = $('#first-name').val();
         var lastName = $('#last-name').val();
+        var come = $("input[type='radio'][name='can-come']:checked").val();
+        var stay = $("input[type='radio'][name='can-stay']:checked").val();
         
 
         $.ajax({
             url: "https://docs.google.com/forms/d/16rmvfPDzYjex6QfE9USyajAJHHulhwL1Tbx4Y6_-ylA/formResponse",
-            data: {"entry.271912289": firstName, "entry.49197882": lastName},
+            data: {"entry.271912289": firstName, "entry.49197882": lastName,"entry.1645674387": come, "entry.1971857946": stay},
             type: "POST",
             dataType: "xml",
             statusCode: {
