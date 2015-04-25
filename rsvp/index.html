@@ -35,6 +35,23 @@ title: Wedding!
                 <input id="no-can-stay" type="radio" value="No" name="can-stay">
                 <label>No</label>
             </div>
+            <label>What dates can you stay?</label>
+            <div class='multi-choice'>
+                <input type="checkbox" value="12/19" name="when-stay">
+                <label>12/19</label>
+            </div>
+            <div class='multi-choice'>    
+                <input type="checkbox" value="12/20" name="when-stay">
+                <label>12/20</label>
+            </div>
+            <div class='multi-choice'>
+                <input type="checkbox" value="12/21" name="when-stay">
+                <label>12/19</label>
+            </div>
+            <div class='multi-choice'>    
+                <input type="checkbox" value="12/22" name="when-stay">
+                <label>12/20</label>
+            </div>
         </fieldset>
         <div id='send-container'>
             <input type="submit" value="Submit RSVP" id="rsvp-send" name="submit">
@@ -47,13 +64,23 @@ title: Wedding!
         var lastName = $('#last-name').val();
         var come = $("input[type='radio'][name='can-come']:checked").val();
         var stay = $("input[type='radio'][name='can-stay']:checked").val();
-        
+        var whenStay = "";
+        var whenStayArray = [];
+        var i = 0;
+        $("input[type='checkbox'][name='when-stay']:checked").each(function(){
+            whenStay += ", " + this.value;
+            whenStayArray[i] = this.value;
+            i++;
+        });
+        alert(whenStayArray[1]); 
+        alert(whenStayArray[2]); 
 
         $.ajax({
             url: "https://docs.google.com/forms/d/16rmvfPDzYjex6QfE9USyajAJHHulhwL1Tbx4Y6_-ylA/formResponse",
-            data: {"entry.271912289": firstName, "entry.49197882": lastName,"entry.1645674387": come, "entry.1971857946": stay},
+            data: {"entry.271912289": firstName, "entry.49197882": lastName,"entry.1645674387": come, "entry.1971857946": stay, "entry.1849920741": whenStayArray},
             type: "POST",
             dataType: "xml",
+            traditional: true,
             statusCode: {
                 0: function() {
                     //Success message
