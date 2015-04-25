@@ -129,6 +129,7 @@ ul.posts li {
     text-align: center;
 }
 
+#rsvp-form input[type='checkbox']:not(old),
 #rsvp-form input[type='radio']:not(old){
  /* Hide the input, but have it still be clickable */
     width   : 28px;
@@ -137,6 +138,7 @@ ul.posts li {
     opacity : 0;
 }
 
+#rsvp-form input[type='checkbox']:not(old) + label,
 #rsvp-form input[type='radio']:not(old) + label{
   display      : inline-block;
   margin-left  : -28px;
@@ -148,6 +150,12 @@ ul.posts li {
 #rsvp-form input[type='radio']:not(old):checked + label{
     background-position : 0 -48px;
 }
+#rsvp-form input[type='checkbox']:not(old):checked + label{
+    background-position : 0 -24px;
+}
 #rsvp-form .yes-no{
+display:inline;margin:auto 20px;
+}
+#rsvp-form .multi-choice{
 display:inline;margin:auto 20px;
 }
